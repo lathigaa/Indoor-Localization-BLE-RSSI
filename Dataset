@@ -1,0 +1,10 @@
+About Dataset : https://www.kaggle.com/datasets/mehdimka/ble-rssi-dataset
+Content
+The dataset was created using the RSSI readings of an array of 13 ibeacons in the first floor of Waldo Library, Western Michigan University. Data was collected using iPhone 6S. The dataset contains two sub-datasets: a labeled dataset (1420 instances) and an unlabeled dataset (5191 instances). The recording was performed during the operational hours of the library. For the labeled dataset, the input data contains the location (label column), a timestamp, followed by RSSI readings of 13 iBeacons. RSSI measurements are negative values. Bigger RSSI values indicate closer proximity to a given iBeacon (e.g., RSSI of -65 represent a closer distance to a given iBeacon compared to RSSI of -85). For out-of-range iBeacons, the RSSI is indicated by -200. The locations related to RSSI readings are combined in one column consisting a letter for the column and a number for the row of the position. The following figure depicts the layout of the iBeacons as well as the arrange of locations.
+
+iBeacons Layout
+
+Attribute Information
+location: The location of receiving RSSIs from ibeacons b3001 to b3013; symbolic values showing the column and row of the location on the map (e.g., A01 stands for column A, row 1).
+date: Datetime in the format of ‘d-m-yyyy hh:mm:ss’
+b3001 - b3013: RSSI readings corresponding to the iBeacons; numeric, integers only.
